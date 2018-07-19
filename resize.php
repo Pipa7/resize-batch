@@ -9,6 +9,7 @@
  * Dependencias
  * https://github.com/spatie/image-optimizer#optimization-tools
  */
+
 if(!extension_loaded('gd')){
     echo 'Necessário biblioteca GD';
     return;
@@ -20,7 +21,7 @@ $diretorioMinificados = $diretorioImagens . '/minificados/';
 
 
 
-if (!file_exists($filename)) {
+if (!file_exists($diretorioMinificados)) {
     mkdir($diretorioMinificados, 0777);
 }
 
